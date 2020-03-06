@@ -1,6 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using WordCounter.Models;
-using System;
 
 namespace WordCounter.Tests
 {

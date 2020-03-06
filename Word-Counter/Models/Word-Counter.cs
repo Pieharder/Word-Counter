@@ -1,5 +1,3 @@
-using System;
-
 namespace WordCounter.Models
 {
   public class WordCount
@@ -32,7 +30,7 @@ namespace WordCounter.Models
       int wordUsed = 0;
       for(int i = 0; i < lowerCaseSentenceArray.Length; i++)
       {
-        if(lowerCaseSentenceArray[i] == "jef")
+        if(lowerCaseSentenceArray[i] == "Jef")
         {
           wordUsed++;
         }
