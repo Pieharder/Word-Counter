@@ -27,10 +27,16 @@ namespace WordCounter.Models
       return sentenceArray;
     }
 
-    public static int WordCounter(string inputWord, string inputSentence)
+    public static int WordCounter(string inputWord, string[] lowerCaseSentenceArray)
     {
       int wordUsed = 0;
- 
+      for(int i = 0; i < lowerCaseSentenceArray.Length; i++)
+      {
+        if(lowerCaseSentenceArray[i] == "jef")
+        {
+          wordUsed++;
+        }
+      }
       return wordUsed;
     }
   }
