@@ -24,6 +24,12 @@ namespace WordCounter.Tests
       CollectionAssert.AreEqual(WordCount.BreakDown(inputSentence), sentenceArray);
     }
 
-    
+    [TestMethod]
+    public void LowerCase_AllWordsLowerCase_ArrayOfLowerCaseWords()
+    {
+      string[] sentenceArray = {"My", "name", "Jef"};
+      string[] lowerCaseSentenceArray = {"my", "name", "jef"};
+      CollectionAssert.AreEqual(WordCount.LowerCase(sentenceArray), lowerCaseSentenceArray);
+    }
   }
 }
