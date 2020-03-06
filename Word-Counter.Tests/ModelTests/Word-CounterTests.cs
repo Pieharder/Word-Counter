@@ -10,8 +10,10 @@ namespace WordCounter.Tests
     [TestMethod]
     public void WordCount_AcceptInput_True()
     {
-      // Arrange & Act
-      WordCount testWord = new WordCount("magic", "magic the Gathering");
+      // Arrange
+      WordCount testWord = new WordCount();
+      // Act
+      testWord.Count("magic", "magic the Gathering");
       // Assert
       Assert.AreEqual(typeof(WordCount), testWord.GetType());
     }
