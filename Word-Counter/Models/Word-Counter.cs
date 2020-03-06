@@ -12,6 +12,11 @@ namespace WordCounter.Models
       inputWord = Word;
       inputSentence = Sentence;
     }
+
+    public static string[] BreakDown(string inputSentence)
+    {
+      return inputSentence.Split(" ");
+    }
   }
 
 }
