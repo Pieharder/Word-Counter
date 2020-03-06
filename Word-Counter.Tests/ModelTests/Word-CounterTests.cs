@@ -16,26 +16,12 @@ namespace WordCounter.Tests
       Assert.AreEqual(typeof(WordCount), testWord.GetType());
     }
     
-    // [TestMethod]
-    // public void Count_LowerCaseAllInput_LowerCaseString()
-    // {
-    //   // Arrange
-    //   WordCount testWord = new WordCount();
-    //   // Act
-    //   testWord
-    //   // Assert
-    //   Assert.AreEqual(typeof(WordCount), testWord.GetType());
-    // }
-
-    // [TestMethod]
-    // public void Count_CountOccurences_Number()
-    // {
-    //   // Arrange
-    //   WordCount testWord = new WordCount();
-    //   // Act
-    //   testWord.Count("Jef", "My name Jef");
-    //   // Assert
-    //   Assert.AreEqual(typeof(WordCount), testWord.GetType());
-    // }
+    [TestMethod]
+    public void BreakDown_SeperateEachWord_ArrayOfWords()
+    {
+      string inputSentence = "My name Jef";
+      string[] sentenceArray = {"My", "name", "Jef"};
+      Assert.AreEqual(WordCount.BreakDown(inputSentence), sentenceArray);
+    }
   }
 }
