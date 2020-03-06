@@ -1,16 +1,21 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using WordCounter.Models;
-// using System;
+using System;
 
 namespace WordCounter.Tests
 {
   [TestClass]
-  public class WordCounterTests
+  public class WordCountTests
   {
     [TestMethod]
-    public void MethodName_WhatItDoes_ReturnObject()
+    public void WordCount_CreateInstance_True()
     {
-
+      // Arrange
+      WordCount testWord = new WordCount();
+      // Act
+      
+      // Assert
+      Assert.AreEqual(typeof(WordCount), testWord.GetType());
     }
 
   }
