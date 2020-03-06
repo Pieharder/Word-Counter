@@ -17,6 +17,15 @@ namespace WordCounter.Models
     {
       return inputSentence.Split(" ");
     }
+
+    public static string[] LowerCase(string[] sentenceArray)
+    {
+      for(int i = 0; i < sentenceArray.Length; i++)
+      {
+        sentenceArray[i] = sentenceArray[i].ToLower();
+      }
+      return sentenceArray;
+    }
   }
 
 }
