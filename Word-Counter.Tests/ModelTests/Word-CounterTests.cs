@@ -21,7 +21,9 @@ namespace WordCounter.Tests
     {
       string inputSentence = "My name Jef";
       string[] sentenceArray = {"My", "name", "Jef"};
-      Assert.AreEqual(WordCount.BreakDown(inputSentence), sentenceArray);
+      CollectionAssert.AreEqual(WordCount.BreakDown(inputSentence), sentenceArray);
     }
+
+    
   }
 }
