@@ -9,8 +9,8 @@ namespace WordCounter.Models
 
     public void Count(string inputWord, string inputSentence)
     {
-      inputWord = Word;
-      inputSentence = Sentence;
+      Word = "Jef";
+      Sentence = "My name Jef";
     }
   }
 

@@ -11,7 +11,7 @@ namespace WordCounter.Tests
     public void WordCount_AcceptInput_True()
     {
       // Arrange
-      WordCount testWord = new WordCount();
+      WordCount testWord = new WordCount("Jef", "My name Jef");
       // Assert
       Assert.AreEqual(typeof(WordCount), testWord.GetType());
     }
