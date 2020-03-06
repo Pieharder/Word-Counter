@@ -12,11 +12,30 @@ namespace WordCounter.Tests
     {
       // Arrange
       WordCount testWord = new WordCount();
-      // Act
-      testWord.Count("Jef", "My name Jef");
       // Assert
       Assert.AreEqual(typeof(WordCount), testWord.GetType());
     }
+    
+    // [TestMethod]
+    // public void Count_LowerCaseAllInput_LowerCaseString()
+    // {
+    //   // Arrange
+    //   WordCount testWord = new WordCount();
+    //   // Act
+    //   testWord
+    //   // Assert
+    //   Assert.AreEqual(typeof(WordCount), testWord.GetType());
+    // }
 
+    // [TestMethod]
+    // public void Count_CountOccurences_Number()
+    // {
+    //   // Arrange
+    //   WordCount testWord = new WordCount();
+    //   // Act
+    //   testWord.Count("Jef", "My name Jef");
+    //   // Assert
+    //   Assert.AreEqual(typeof(WordCount), testWord.GetType());
+    // }
   }
 }
