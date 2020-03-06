@@ -2,11 +2,11 @@ using System;
 
 namespace WordCounter.Models
 {
-  class Test
+  public class WordCount
   {
     // public static void Temp()
     // {
-
+      
     // }
   }
 
