@@ -34,7 +34,7 @@ namespace WordCounter.Tests
     public void WordCount_CountAllInstancesOfAWord_Number()
     {
       WordCount testWord = new WordCount("Jef", "My name Jef");
-      Assert.AreEqual(WordCount.WordCounter(), 1);
+      Assert.AreEqual(WordCount.WordCounter(string inputWord, string inputSentence), 1);
     }
   }
 }

@@ -26,6 +26,13 @@ namespace WordCounter.Models
       }
       return sentenceArray;
     }
+
+    public static int WordCounter(string inputWord, string inputSentence)
+    {
+      int wordUsed = 0;
+ 
+      return wordUsed;
+    }
   }
 
 }
