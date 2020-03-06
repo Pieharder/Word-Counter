@@ -10,9 +10,7 @@ namespace WordCounter.Tests
     [TestMethod]
     public void WordCount_AcceptInput_True()
     {
-      // Arrange
       WordCount testWord = new WordCount("Jef", "My name Jef");
-      // Assert
       Assert.AreEqual(typeof(WordCount), testWord.GetType());
     }
     
@@ -30,6 +28,13 @@ namespace WordCounter.Tests
       string[] sentenceArray = {"My", "name", "Jef"};
       string[] lowerCaseSentenceArray = {"my", "name", "jef"};
       CollectionAssert.AreEqual(WordCount.LowerCase(sentenceArray), lowerCaseSentenceArray);
+    }
+
+    [TestMethod]
+    public void WordCount_CountAllInstancesOfAWord_Number()
+    {
+      WordCount testWord = new WordCount("Jef", "My name Jef");
+      Assert.AreEqual(WordCount.WordCounter(), 1);
     }
   }
 }
