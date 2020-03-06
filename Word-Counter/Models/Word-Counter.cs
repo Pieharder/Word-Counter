@@ -7,10 +7,10 @@ namespace WordCounter.Models
     public string Word { get; set; }
     public string Sentence { get; set; }
 
-    public void Count(string inputWord, string inputSentence)
+    public WordCount(string inputWord, string inputSentence)
     {
-      Word = "Jef";
-      Sentence = "My name Jef";
+      inputWord = Word;
+      inputSentence = Sentence;
     }
   }
 
