@@ -13,7 +13,7 @@ namespace WordCounter.Tests
       // Arrange
       WordCount testWord = new WordCount();
       // Act
-      testWord.Count("magic", "magic the Gathering");
+      testWord.Count("Jef", "My name Jef");
       // Assert
       Assert.AreEqual(typeof(WordCount), testWord.GetType());
     }
