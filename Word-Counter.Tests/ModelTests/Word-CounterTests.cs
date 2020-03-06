@@ -8,12 +8,10 @@ namespace WordCounter.Tests
   public class WordCountTests
   {
     [TestMethod]
-    public void WordCount_CreateInstance_True()
+    public void WordCount_AcceptInput_True()
     {
-      // Arrange
-      WordCount testWord = new WordCount();
-      // Act
-      
+      // Arrange & Act
+      WordCount testWord = new WordCount("magic", "magic the Gathering");
       // Assert
       Assert.AreEqual(typeof(WordCount), testWord.GetType());
     }
