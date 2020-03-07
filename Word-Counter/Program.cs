@@ -7,7 +7,7 @@ namespace WordCounter
   {
     public static void Main()
     {
-     Console.WriteLine();
+     
     }
   }
 
