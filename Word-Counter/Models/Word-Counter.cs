@@ -7,8 +7,8 @@ namespace WordCounter.Models
 
     public WordCount(string inputWord, string inputSentence)
     {
-      inputWord = Word;
-      inputSentence = Sentence;
+      Word = inputWord;
+      Sentence = inputSentence;
     }
 
     public static string[] BreakDown(string inputSentence)
@@ -30,7 +30,7 @@ namespace WordCounter.Models
       int wordUsed = 0;
       for(int i = 0; i < lowerCaseSentenceArray.Length; i++)
       {
-        if(lowerCaseSentenceArray[i] == "Jef")
+        if(lowerCaseSentenceArray[i] == "jef")
         {
           wordUsed++;
         }
