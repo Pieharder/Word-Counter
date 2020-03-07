@@ -13,8 +13,9 @@ This project will allow a user to enter a word and a sentence. From that input c
 | Behavior | Input | Output |
 |:---:|:---:|:---:|
 | User input a single word to be counted  | magic | Magic will be counted |
+| Input Sentence will be broken down into array of words | Magical magicians doing magic | {"Magical", "magicians", "doing", "magic"} |
+| Input Sentence array of words will be made all lower case | {"Magical", "magicians", "doing", "magic"} | {"magical", "magicians", "doing", "magic"} |
 | User input a sentence or phrase to check for the previously entered word | The art of magic and magicians | magic appears 1 time in this sentence |
-| Word to be counted will not count instances of the word within other words | magicians | magic appears 0 times in this sentence |
 
 
 ## Setup/Installation Requirements
