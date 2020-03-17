@@ -27,12 +27,15 @@ namespace WordCounter.Models
       return sentenceArray;
     }
 
-    public static int WordCounting(string inputWord, string[] lowerCaseSentenceArray)
+    public int WordCounting()
     {
+      string userInputWord = this.Word;
+      string userInputSentences = this.Sentence;
+      string[] sentenceArray = userInputSentences.Split(" ");
       int wordUsed = 0;
-      for(int i = 0; i < lowerCaseSentenceArray.Length; i++)
+      foreach(string countWord in sentenceArray)
       {
-        if(lowerCaseSentenceArray[i] == "jef")
+        if(userInputWord == countWord)
         {
           wordUsed++;
         }
