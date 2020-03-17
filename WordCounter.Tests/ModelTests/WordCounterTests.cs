@@ -30,11 +30,17 @@ namespace WordCounter.Tests
     }
 
     [TestMethod]
-    public void WordCount_CountAllInstancesOfAWord_Number()
+    public void WordCounting_CountAllInstancesOfAWord_Number()
     {
-      string inputWord = "jef";
-      string[] lowerCaseSentenceArray = {"my", "name", "jef"};
-      Assert.AreEqual(WordCount.WordCounting(inputWord, lowerCaseSentenceArray), 1);
+      WordCount testWord = new WordCount("Jef", "My name Jef");
+      Assert.AreEqual(testWord.WordCounting(), 1);
+    }
+
+        [TestMethod]
+    public void WordCounting_OnlyCountCompleteWords_Number()
+    {
+      WordCount testWord = new WordCount("Jef", "My name Jeffrey but I go by Jef");
+      Assert.AreEqual(testWord.WordCounting(), 1);
     }
   }
 }
