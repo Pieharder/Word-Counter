@@ -1,3 +1,5 @@
+using System;
+
 namespace WordCounter.Models
 {
   public class WordCount
@@ -25,7 +27,7 @@ namespace WordCounter.Models
       return sentenceArray;
     }
 
-    public static int WordCounter(string inputWord, string[] lowerCaseSentenceArray)
+    public static int WordCounting(string inputWord, string[] lowerCaseSentenceArray)
     {
       int wordUsed = 0;
       for(int i = 0; i < lowerCaseSentenceArray.Length; i++)
@@ -38,5 +40,4 @@ namespace WordCounter.Models
       return wordUsed;
     }
   }
-
 }

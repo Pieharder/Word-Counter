@@ -34,7 +34,7 @@ namespace WordCounter.Tests
     {
       string inputWord = "jef";
       string[] lowerCaseSentenceArray = {"my", "name", "jef"};
-      Assert.AreEqual(WordCount.WordCounter(inputWord, lowerCaseSentenceArray), 1);
+      Assert.AreEqual(WordCount.WordCounting(inputWord, lowerCaseSentenceArray), 1);
     }
   }
 }

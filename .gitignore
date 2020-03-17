@@ -1,4 +1,3 @@
-Word-Counter/bin  
-Word-Counter.Tests/bin 
-Word-Counter/obj 
-Word-Counter.Tests/obj
+.vscode
+obj/
+bin/
